@@ -1,7 +1,11 @@
+import { Cards } from "./Cards";
+import "./gallery.css"
+
 export function Gallery(){
+
     return (
         <div className="gallery">
-            <h1>Gallery</h1>
+            <Cards/>
         </div>
     )
 }

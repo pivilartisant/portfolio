@@ -1,0 +1,30 @@
+.gallery{
+    margin: 0px;
+    padding: 20px;
+    min-width: fit-content;
+    overflow-y: none;
+    height: 100vh;
+
+    background-color: lightgray;
+
+    color: black;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: row
+}
+
+.card{
+    min-width: 340px;
+    height: 540px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0px 20px 0px 0px ;
+    padding: 20px;
+
+    background-color: aqua;
+}
