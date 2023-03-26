@@ -1,0 +1,87 @@
+@font-face {
+    font-family: HackRegular;
+    src: url("../../assets/Hack-Regular.ttf") format("truetype");
+  }
+
+.hero{
+    position:absolute;
+
+    top: 0;
+    left: 0;
+    display: flex;
+
+    z-index: 1;
+
+    font-family: 'Courier New', Courier, monospace;
+    color : black;
+
+    width:300px;
+
+    margin: 20px;
+}
+
+.hero-cntr{
+display: flex;
+flex-direction: column;
+}
+
+.hero-header{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-family: HackRegular;
+}
+
+.hero-p{
+    font-size: 1rem;
+    transition: font-size ease-in-out 0.2s;
+}
+
+.hero-p:hover{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.links{
+    position:absolute;
+
+    bottom: 0;
+    left: 0;
+
+    z-index: 1;
+
+    font-family: 'Courier New', Courier, monospace;
+    color : black;
+
+    width: fit-content;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links-cntr{
+
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-ul{
+    padding-left: 0px;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.links-li{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
