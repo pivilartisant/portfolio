@@ -1,0 +1,136 @@
+@font-face {
+    font-family: HackRegular;
+    src: url("../../assets/Hack-Regular.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: HackBold;
+  src: url("../../assets/Hack-Bold.ttf") format("truetype");
+}
+
+.about{
+
+    margin: 0px;
+    padding: 20px;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background-color: lightgray;
+
+    color: black;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+}
+
+.text-about{
+    height: fit-content;
+    max-width: 480px;
+}
+
+.text-about-title{
+    width: fit-content;
+
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.text-about-header{
+    font-family: HackRegular;
+    font-size: 1.4  rem;
+}
+
+.text-about-header em{
+    font-family: HackBold;
+    font-size: 1.4  rem;
+}
+
+.text-about-content{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.text-about-p{
+    margin-top:40px;
+    margin-bottom:40px;
+
+    font-size: 1.6  rem;
+}
+
+.text-about-p em{
+    font-weight:600 ;
+}
+
+.cta-about{
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    
+  
+
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+.cta-about-btn1-cntr{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.cta-about-btn1{
+    width: fit-content;
+
+    padding: 8px 16px 8px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: black;
+    font-size: 1.2rem;
+
+    background: none;
+
+	cursor: pointer;
+
+    border: solid 1px black;
+}
+
+.cta-about-btn1 img,.cta-about-btn2 img {
+    margin-left: 10px;
+}
+
+.cta-about-btn2-cntr{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+}
+
+.cta-about-btn2{
+    width: fit-content;
+
+    padding: 8px 16px 8px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: black;
+    font-size: 1.2rem;
+
+    background: none;
+
+	cursor: pointer;
+
+    border: solid 1px black;
+}
+
+.about-scene{
+    min-width: 100%;
+    min-height: 100%;
+}

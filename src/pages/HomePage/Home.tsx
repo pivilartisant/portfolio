@@ -8,7 +8,7 @@ export default function Home(){
     return( 
         <div className="home">
             <Hero />
-                <Links/>
+            <Links/>
             <ComputerScene />
         </div>
     )

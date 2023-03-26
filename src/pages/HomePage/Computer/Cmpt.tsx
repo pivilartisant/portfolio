@@ -54,7 +54,7 @@ export function ComputerModel(props: JSX.IntrinsicElements['group']) {
         <mesh geometry={nodes.Object_4.geometry} material={materials.initialShadingGroup} />
         <mesh geometry={nodes.Object_5.geometry} material={materials.lambert3SG} />
         <mesh geometry={nodes.Object_6.geometry} material={materials.lambert4SG} position={[0, 0, -0.1]} />
-      <mesh geometry={nodes.Text001.geometry} material={materials['Material.002']} position={[-0.0, -0.10, 1.45]} rotation={[Math.PI, 0, -Math.PI /2]} scale={0.15} />
+      <mesh geometry={nodes.Text001.geometry} material={materials['Material.002']} position={[-0.0, -0.10, 1.50]} rotation={[Math.PI, 0, -Math.PI /2]} scale={0.17} />
     </group>
   )
 }
