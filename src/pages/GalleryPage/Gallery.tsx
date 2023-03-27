@@ -1,11 +1,15 @@
 import { Cards } from "./Cards";
 import "./gallery.css"
+import { GalleryHero } from "./GalleryHero";
 
 export function Gallery(){
 
     return (
         <div className="gallery">
-            <Cards/>
+            <GalleryHero/>
+            <div className="cards">
+                <Cards/>
+            </div>
         </div>
     )
 }

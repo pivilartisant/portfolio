@@ -1,9 +1,15 @@
+@font-face {
+    font-family: HackRegular;
+    src: url("../../assets/Hack-Regular.ttf") format("truetype");
+}
+
 .gallery{
     margin: 0px;
     padding: 20px;
     min-width: fit-content;
     overflow-y: none;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
 
     background-color: lightgray;
 
@@ -12,19 +18,112 @@
     font-family: 'Courier New', Courier, monospace;
 
     display: flex;
-    flex-direction: row
+    flex-direction: column;
+}
+
+.gallery-hero{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.gallery-hero-cntr{
+    display: flex;
+    flex-direction: column;
+    }
+    
+.gallery-hero-header{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: HackRegular;
+}
+    
+.gallery-hero-p{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
-    min-width: 340px;
-    height: 540px;
+    width: 350px;
+    height: 650px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    margin: 0px 20px 0px 0px ;
+    margin: 20px 40px 0px 0px ;
     padding: 20px;
 
-    background-color: aqua;
+    border: solid 1px black;
+    
+    position: relative;
+    left:0px;
+    transition: left ease-in-out 0.2s;
+}
+
+.card:hover{
+    left:10px;
+
+}
+
+.card-img{
+    margin: 0px 0px 20px 0px ;
+
+    width: 300px;
+    height: 300px;
+}
+
+.card-title{
+    font-family: HackRegular;
+    margin: 0px 0px 20px 0px ;
+    font-size: 1.1rem;
+}
+
+.card-desc{
+    font-size: 0.9Rem;
+    margin: 0px 0px 20px 0px ;
+}
+
+.card-refs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 20px 0px ;
+}
+
+.card-ref{
+    font-size: 0.9Rem;
+    margin: 0px 8px 0px 0px ;
+    transition: font-size ease-in-out 0.2s;
+}
+
+.card-ref:hover{
+    font-weight: bold;
+    cursor:default;
+
+}
+
+.card-link-a{
+    position :relative;
+    text-decoration: none;
+    margin: 20px 0px 0px 0px ;
+    font-size: 1rem;
+    left:0;
+    transition: text-decoration ease-in-out 0.2s;
+}
+
+.card-link-a:hover{
+    text-decoration: underline;
+}
+
+.card-link-i{
+    position: relative;
+    top:3px;
+    width: 16px;
 }

@@ -4,7 +4,7 @@ a{
 
 .navbar{
     position: fixed;
-    top:0;
+    bottom:0;
     right:0;
     z-index: 1;
 
@@ -31,6 +31,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 1.1rem;
 }
 
 
@@ -40,5 +41,12 @@ a{
     color:black;
 
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 0px;
+    transition: left ease-in-out 0.2s;
 
+}
+
+.nav-li:hover{
+left: -4px;
 }

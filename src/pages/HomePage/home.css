@@ -2,6 +2,19 @@
     font-family: HackRegular;
     src: url("../../assets/Hack-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: NeueRegular;
+    src: url("../../assets/NeueHaasDisplayRoman.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: NeueMedium;
+    src: url("../../assets/NeueHaasDisplayMediu.ttf") format("truetype");
+  }
+
+.home{
+    height: 100vh;
+}
 
 .hero{
     position:absolute;
@@ -26,19 +39,14 @@ flex-direction: column;
 }
 
 .hero-header{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-family: HackRegular;
 }
 
 .hero-p{
-    font-size: 1rem;
-    transition: font-size ease-in-out 0.2s;
-}
-
-.hero-p:hover{
-    font-size: 1.1rem;
-    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .links{
@@ -51,6 +59,7 @@ flex-direction: column;
 
     font-family: 'Courier New', Courier, monospace;
     color : black;
+    font-size: 1.1rem;
 
     width: fit-content;
     margin: 20px;
@@ -84,4 +93,9 @@ flex-direction: column;
 
     font-family: 'Courier New', Courier, monospace;
 
+    transition: font-size ease-in-out 0.3s;
+
+}
+.links-li:hover{
+    font-size: 1.2rem;
 }

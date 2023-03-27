@@ -3,12 +3,13 @@ import radio from "../../assets/5kradio.png";
 import pixl from "../../assets/pixl.png";
 import tarot from "../../assets/tarot.png";
 import mystere from "../../assets/mystere.png";
+import arrow from "../../assets/arrow-top-right.png"
 
 interface Projects{
     id: number;
     title: string;
     desc: string;
-    refs: string;
+    refs: string[];
     link: string;
     src: string;
 }
@@ -41,7 +42,7 @@ let newData:Projects[] = data.map((element)=> ({
     id: element.ID,
     title: element.Title,
     desc: element.Desc,
-    refs: element.Ref,
+    refs: element.Ref.split(" "),
     link: element.Link,
     src: element.Src
 }))
@@ -53,11 +54,17 @@ export function Cards(){
         <>
         {newData.map((project: Projects) => (
             <div className="card" key={project.id}>
-                <img src={img[project.id-1].src} style={{width:200, height:200, borderRadius:100}}></img>
+                <img className="card-img" src={img[project.id-1].src} ></img>
                 <h3 className="card-title">{project.title}</h3>
                 <p className="card-desc">{project.desc}</p>
-                <p className="project-refs">{project.refs}</p>
-                <a className="card-link" href={project.link as string}>See project...</a>
+                <div className="card-refs">
+                    {project.refs.map((ref)=>
+                        <p className="card-ref">
+                            {ref}
+                        </p>
+                    )}
+                </div>
+                <p className="card-link-p" >Visit <a className="card-link-a" target={"_blank"} href={project.link as string}>{project.title}</a> <img className="card-link-i" src={arrow} alt="right arrow"/> </p>
             </div>
         ))}
         </>

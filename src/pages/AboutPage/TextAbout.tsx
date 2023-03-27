@@ -7,7 +7,7 @@ export default function TextAbout(){
         <div className="text-about">
                 <div className="text-about-cntr">
                     <header className="text-about-title">
-                        <p className="text-about-header">I believe in making it <em> simple not simplistic</em> </p>
+                        <p className="text-about-header">I believe in making it <em> simple and scalable</em> </p>
                     </header>
                     <main className="text-about-content">
                         <p className="text-about-p">With a keen eye for design and the use of next generation technologies, I create  <em> digital experiences built to last. </em> </p>
