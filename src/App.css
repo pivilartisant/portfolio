@@ -4,3 +4,7 @@
   background-color: lightpink;
   cursor: default;
 }
+
+a{
+  text-decoration: none;
+}

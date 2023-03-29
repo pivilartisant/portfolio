@@ -28,119 +28,253 @@
   src: url("../../assets/TTMedium.otf") format("opentype");
 }
 
-.about{
 
-    margin: 0px;
-    padding: 20px;
-    min-width: 100vw;
-    min-height: 100vh;
+/*Desktop*/
+@media screen and (min-width:1000px) {
+    .about{
 
-    background-color: lightgray;
-
-    color: black;
-
-    font-family: 'Courier New', Courier, monospace;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text-about{
-    height: fit-content;
-    width: 500px;
-}
-
-.text-about-title{
-    width: fit-content;
-
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-.text-about-header{
-    font-family: HackRegular;
-    font-size: 1.6rem;
-}
-
-.text-about-header em{
-    font-family: HackBold;
-    font-size: 1.6rem;
-}
-
-.text-about-content{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-.text-about-p{
-    font-family: TTRegular;
-    margin-top:40px;
-    margin-bottom:40px;
-
-    font-size: 1.3rem;
-}
-
-.text-about-p em{
-    font-family: TTBold;
-}
-
-.cta-about{
-    height: fit-content;
-
-    display: flex;
-    flex-direction: row;
+        margin: 0px;
+        padding: 20px;
+        min-width: 100vw;
+        min-height: 100vh;
     
-    font-family: TTMedium;
-    color: black;
+        background-color: lightgray;
+    
+        color: black;
+    
+        font-family: 'Courier New', Courier, monospace;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .text-about{
+        height: fit-content;
+        width: 500px;
+    }
+    
+    .text-about-title{
+        width: fit-content;
+    
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .text-about-header{
+        font-family: HackRegular;
+        font-size: 1.6rem;
+    }
+    
+    .text-about-header em{
+        font-family: HackBold;
+        font-size: 1.6rem;
+    }
+    
+    .text-about-content{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .text-about-p{
+        font-family: TTRegular;
+        margin-top:40px;
+        margin-bottom:40px;
+    
+        font-size: 1.3rem;
+    }
+    
+    .text-about-p em{
+        font-family: TTBold;
+    }
+    
+    .cta-about{
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: row;
+        
+        font-family: TTMedium;
+        color: black;
+    }
+    
+    .cta-about-btn-cntr{
+        width: fit-content;
+        height: fit-content;
+        margin-right: 20px;
+    }
+    
+    .cta-about-btn{
+        width: fit-content;
+    
+        padding: 8px 16px 8px 16px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        color: black;
+        font-size: 1.2rem;
+    
+        background: none;
+    
+        cursor: pointer;
+    
+        border: solid 1px black;
+    
+        transition: padding ease-in-out 0.2s;
+    }
+    
+    .cta-about-btn:hover{
+        padding: 8px 24px 8px 24px;
+    }
+    
+    .cta-about-btn a img {
+        position: relative;
+        top: 3px;
+        margin-left: 10px;
+    }
+    .about-logos-cntr{
+        width: 400px;
+        height: 400px;
+    
+        margin-left:240px ;
+    }
+    .about-logos{
+        width: 100px;
+        height: auto;
+    
+        margin-right: 80px;
+        margin-bottom: 40px;
+    }
 }
 
-.cta-about-btn-cntr{
-    width: fit-content;
-    height: fit-content;
-    margin-right: 20px;
-}
 
-.cta-about-btn{
-    width: fit-content;
 
-    padding: 8px 16px 8px 16px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 
-    color: black;
-    font-size: 1.2rem;
 
-    background: none;
 
-	cursor: pointer;
 
-    border: solid 1px black;
 
-    transition: padding ease-in-out 0.2s;
-}
+/*MOBILE*/
+@media screen and (max-width:1000px) {
+    .about{
 
-.cta-about-btn:hover{
-    padding: 8px 24px 8px 24px;
-}
-
-.cta-about-btn img {
-    margin-left: 10px;
-}
-.about-logos-cntr{
-    width: 400px;
-    height: 400px;
-
-    margin-left:240px ;
-}
-.about-logos{
-    width: 100px;
-    height: auto;
-
-    margin-right: 80px;
-    margin-bottom: 40px;
+        margin: 0px;
+        padding: 20px;
+        min-width: 100vw;
+        min-height: 100vh;
+    
+        background-color: lightgray;
+    
+        color: black;
+    
+        font-family: 'Courier New', Courier, monospace;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .text-about{
+        height: fit-content;
+        width: 500px;
+    }
+    
+    .text-about-title{
+        width: fit-content;
+    
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .text-about-header{
+        font-family: HackRegular;
+        font-size: 1.6rem;
+    }
+    
+    .text-about-header em{
+        font-family: HackBold;
+        font-size: 1.6rem;
+    }
+    
+    .text-about-content{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .text-about-p{
+        font-family: TTRegular;
+        margin-top:40px;
+        margin-bottom:40px;
+    
+        font-size: 1.3rem;
+    }
+    
+    .text-about-p em{
+        font-family: TTBold;
+    }
+    
+    .cta-about{
+        height: fit-content;
+    
+        display: flex;
+        flex-direction: row;
+        
+        font-family: TTMedium;
+        color: black;
+    }
+    
+    .cta-about-btn-cntr{
+        width: fit-content;
+        height: fit-content;
+        margin-right: 20px;
+    }
+    
+    .cta-about-btn{
+        width: fit-content;
+    
+        padding: 8px 16px 8px 16px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        color: black;
+        font-size: 1.2rem;
+    
+        background: none;
+    
+        cursor: pointer;
+    
+        border: solid 1px black;
+    
+        transition: padding ease-in-out 0.2s;
+    }
+    
+    .cta-about-btn:hover{
+        padding: 8px 24px 8px 24px;
+    }
+    
+    .cta-about-btn a img {
+        margin-left: 10px;
+    }
+    .about-logos-cntr{
+        width: 400px;
+        height: 400px;
+    
+        margin-left:240px ;
+    }
+    .about-logos{
+        width: 100px;
+        height: auto;
+    
+        margin-right: 80px;
+        margin-bottom: 40px;
+    }
 }
