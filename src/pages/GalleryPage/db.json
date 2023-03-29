@@ -3,7 +3,7 @@
     "ID": 1,
     "Title": "Mystère la Revue",
     "Desc": "Mystère is a print magazine created by F.A. Dutour. It features political and artistic content that helps us reflect on contemporary society.",
-    "Ref": "#frontEnd #responsive #website  #React.Js #Javascript #HTML #CSS",
+    "Ref": "#frontEnd #responsive #website #React.Js #Javascript #HTML #CSS",
     "Link": "https://classy-belekoy-465e6d.netlify.app/",
     "Src": "mystere"
   },
@@ -11,7 +11,7 @@
     "ID": 2,
     "Title": "5k Radio",
     "Desc": "5k Radio is an independent online radio that broadcasts a large array of music. As a decentralised community it uses this web app as a hub for future expansion.",
-    "Ref": "#fullStack #mobileFirst #webApp #Javascript #JSON  #FetchAPI #HTML #CSS",
+    "Ref": "#fullStack #mobileFirst #webApp #Javascript #JSON #FetchAPI #HTML #CSS",
     "Link": "https://www.5kradio.live",
     "Src": "radio"
   },
@@ -27,7 +27,7 @@
     "ID": 4,
     "Title": "Spooky Tarot",
     "Desc": "This project was conceived as a fun promotional app used to raise brand awareness during the halloween period.",
-    "Ref": "#fullStack #mobileFirst #miniApp #Javascript #JSON  #FetchAPI #HTML #CSS",
+    "Ref": "#fullStack #mobileFirst #miniApp #Javascript #JSON #FetchAPI #HTML #CSS",
     "Link": "https://pivilartisant.github.io/spookyTarot/",
     "Src": "tarot"
   }

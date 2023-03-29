@@ -1,11 +1,31 @@
 @font-face {
     font-family: HackRegular;
     src: url("../../assets/Hack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: HackBold;
+    src: url("../../assets/Hack-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: TTLight;
+    src: url("../../assets/TTLight.otf") format("opentype");
   }
 
 @font-face {
-  font-family: HackBold;
-  src: url("../../assets/Hack-Bold.ttf") format("truetype");
+  font-family: TTRegular;
+  src: url("../../assets/TTRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: TTBold;
+    src: url("../../assets/TTBold.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: TTMedium;
+  src: url("../../assets/TTMedium.otf") format("opentype");
 }
 
 .about{
@@ -22,11 +42,14 @@
     font-family: 'Courier New', Courier, monospace;
 
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .text-about{
     height: fit-content;
-    max-width: 480px;
+    width: 500px;
 }
 
 .text-about-title{
@@ -38,12 +61,12 @@
 
 .text-about-header{
     font-family: HackRegular;
-    font-size: 1.4  rem;
+    font-size: 1.6rem;
 }
 
 .text-about-header em{
     font-family: HackBold;
-    font-size: 1.4  rem;
+    font-size: 1.6rem;
 }
 
 .text-about-content{
@@ -52,14 +75,15 @@
 }
 
 .text-about-p{
+    font-family: TTRegular;
     margin-top:40px;
     margin-bottom:40px;
 
-    font-size: 1.6  rem;
+    font-size: 1.3rem;
 }
 
 .text-about-p em{
-    font-weight:600 ;
+    font-family: TTBold;
 }
 
 .cta-about{
@@ -68,19 +92,17 @@
     display: flex;
     flex-direction: row;
     
-  
-
-    font-family: 'Courier New', Courier, monospace;
+    font-family: TTMedium;
     color: black;
 }
 
-.cta-about-btn1-cntr{
+.cta-about-btn-cntr{
     width: fit-content;
     height: fit-content;
     margin-right: 20px;
 }
 
-.cta-about-btn1{
+.cta-about-btn{
     width: fit-content;
 
     padding: 8px 16px 8px 16px;
@@ -98,39 +120,27 @@
 	cursor: pointer;
 
     border: solid 1px black;
+
+    transition: padding ease-in-out 0.2s;
 }
 
-.cta-about-btn1 img,.cta-about-btn2 img {
+.cta-about-btn:hover{
+    padding: 8px 24px 8px 24px;
+}
+
+.cta-about-btn img {
     margin-left: 10px;
 }
+.about-logos-cntr{
+    width: 400px;
+    height: 400px;
 
-.cta-about-btn2-cntr{
-    width: fit-content;
-    height: fit-content;
-    margin-left: 20px;
+    margin-left:240px ;
 }
+.about-logos{
+    width: 100px;
+    height: auto;
 
-.cta-about-btn2{
-    width: fit-content;
-
-    padding: 8px 16px 8px 16px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-    color: black;
-    font-size: 1.2rem;
-
-    background: none;
-
-	cursor: pointer;
-
-    border: solid 1px black;
-}
-
-.about-scene{
-    min-width: 100%;
-    min-height: 100%;
+    margin-right: 80px;
+    margin-bottom: 40px;
 }

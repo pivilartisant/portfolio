@@ -3,6 +3,26 @@
     src: url("../../assets/Hack-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: HackBold;
+    src: url("../../assets/Hack-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: TTLight;
+    src: url("../../assets/TTLight.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: TTRegular;
+  src: url("../../assets/TTRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: TTBold;
+    src: url("../../assets/TTBold.otf") format("opentype");
+  }
+
 .gallery{
     margin: 0px;
     padding: 20px;
@@ -24,6 +44,7 @@
 .gallery-hero{
     display: flex;
     margin-bottom: 40px;
+    
 }
 
 .gallery-hero-cntr{
@@ -32,14 +53,14 @@
     }
     
 .gallery-hero-header{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic;
-    font-family: HackRegular;
+    font-family: HackBold;
 }
     
 .gallery-hero-p{
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    font-family: TTLight;
 }
 
 .cards{
@@ -77,36 +98,41 @@
     margin: 0px 0px 20px 0px ;
 
     width: 300px;
-    height: 300px;
+    height: auto;
 }
 
 .card-title{
-    font-family: HackRegular;
+    font-family: HackBold;
     margin: 0px 0px 20px 0px ;
     font-size: 1.1rem;
 }
 
 .card-desc{
-    font-size: 0.9Rem;
+    font-family: TTRegular;
+    font-size: 1.1rem;
     margin: 0px 0px 20px 0px ;
 }
 
 .card-refs{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 0px 20px 0px ;
+    margin: 0px 0px 20px 0px;
 }
 
 .card-ref{
-    font-size: 0.9Rem;
+    font-size: 1rem;
+    font-family: TTLight;
     margin: 0px 8px 0px 0px ;
-    transition: font-size ease-in-out 0.2s;
+    transition: font-family ease-in-out 0.2s;
 }
 
 .card-ref:hover{
-    font-weight: bold;
+    font-family: TTRegular;
     cursor:default;
+}
 
+.card-link-cntr{
+    font-family: TTBold;
 }
 
 .card-link-a{
@@ -115,15 +141,17 @@
     margin: 20px 0px 0px 0px ;
     font-size: 1rem;
     left:0;
-    transition: text-decoration ease-in-out 0.2s;
+    transition: font-family ease-in-out 0.2s;
 }
 
 .card-link-a:hover{
-    text-decoration: underline;
+    font-family: TTBold;
+    color: red;
 }
 
 .card-link-i{
     position: relative;
-    top:3px;
-    width: 16px;
+    top:1px;
+    margin-left: 4px;
+    width: 11px;
 }

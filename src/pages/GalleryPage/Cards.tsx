@@ -46,8 +46,7 @@ let newData:Projects[] = data.map((element)=> ({
     link: element.Link,
     src: element.Src
 }))
-console.log(img)
-console.log(newData)
+
 
 export function Cards(){
     return (
@@ -64,7 +63,9 @@ export function Cards(){
                         </p>
                     )}
                 </div>
-                <p className="card-link-p" >Visit <a className="card-link-a" target={"_blank"} href={project.link as string}>{project.title}</a> <img className="card-link-i" src={arrow} alt="right arrow"/> </p>
+                <div className="card-link-cntr">
+                    <p className="card-link-p">Visit   <a className="card-link-a" target={"_blank"} href={project.link as string}>{project.title}</a> <img className="card-link-i" src={arrow} alt="right arrow"/> </p>
+                </div>
             </div>
         ))}
         </>

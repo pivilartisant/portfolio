@@ -12,6 +12,21 @@
     src: url("../../assets/NeueHaasDisplayMediu.ttf") format("truetype");
   }
 
+  @font-face {
+    font-family: TTLight;
+    src: url("../../assets/TTLight.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: HackBold;
+    src: url("../../assets/Hack-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: HackBoldItalic;
+    src: url("../../assets/Hack-BoldItalic.ttf") format("truetype");
+}
+
 .home{
     height: 100vh;
 }
@@ -28,25 +43,25 @@
     font-family: 'Courier New', Courier, monospace;
     color : black;
 
-    width:300px;
+    width:330px;
 
     margin: 20px;
 }
 
 .hero-cntr{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-header{
-    font-size: 1.5rem;
-    font-style: italic;
-    font-family: HackRegular;
+    font-size: 1.6rem;
+    font-family: HackBoldItalic;
 }
 
 .hero-p{
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: TTLight;
 }
 
 .links{
