@@ -43,8 +43,6 @@
         display: flex;
     
         z-index: 1;
-    
-        font-family: 'Courier New', Courier, monospace;
         color : black;
     
         width:330px;
@@ -60,6 +58,11 @@
     .hero-header{
         font-size: 1.6rem;
         font-family: HackBoldItalic;
+        transition: color ease-in-out 0.2s;
+    }
+
+    .hero-header:hover{
+        color:#2A9E00;
     }
     
     .hero-p{
@@ -151,12 +154,11 @@
     
         z-index: 1;
     
-        font-family: 'Courier New', Courier, monospace;
         color : black;
     
         width:330px;
-    
-        margin: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
     
     .hero-cntr{
@@ -165,13 +167,12 @@
     }
     
     .hero-header{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-family: HackBoldItalic;
     }
     
     .hero-p{
-        font-size: 1.3rem;
-        /* font-family: 'Courier New', Courier, monospace; */
+        font-size: 1.1rem;
         font-family: TTLight;
     }
     
@@ -185,10 +186,11 @@
     
         font-family: 'Courier New', Courier, monospace;
         color : black;
-        font-size: 1.1rem;
+        font-size: 1rem;
     
         width: fit-content;
-        margin: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
     
         display: flex;
         flex-direction: column;
@@ -196,7 +198,6 @@
     }
     
     .links-cntr{
-    
         width: fit-content;
         display: flex;
         flex-direction: column;
@@ -204,13 +205,14 @@
     }
     
     .links-ul{
-        padding-left: 0px;
         min-width: fit-content;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    
+    .links-ul .links-li:first-child{
+        margin-bottom: 10px;
+    }
     
     .links-li{
         list-style: none;
@@ -220,11 +222,6 @@
         font-family: 'Courier New', Courier, monospace;
     
         transition: font-size ease-in-out 0.3s;
-    
     }
-    .links-li:hover{
-        font-size: 1.2rem;
-    }
-    
 }
 

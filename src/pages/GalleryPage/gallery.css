@@ -94,7 +94,6 @@
     
     .card:hover{
         left:10px;
-    
     }
     
     .card-img{
@@ -136,20 +135,20 @@
     
     .card-link-cntr{
         font-family: TTBold;
+        font-size: 1rem;
     }
     
     .card-link-a{
         position :relative;
         text-decoration: none;
         margin: 20px 0px 0px 0px ;
-        font-size: 1rem;
         left:0;
-        transition: font-family ease-in-out 0.2s;
+        transition: color ease-in-out 0.2s;
     }
     
     .card-link-a:hover{
         font-family: TTBold;
-        color: red;
+        color: #2A9E00;
     }
     
     .card-link-i{
@@ -170,27 +169,25 @@
   /*MOBILE*/
   @media screen and (max-width:1000px) {
     .gallery{
-        margin: 0px;
-        padding: 20px;
-        min-width: fit-content;
-        overflow-y: none;
-        min-height: 100vh;
+        width: 100vw;
+        height: 100vh;
         height: fit-content;
     
         background-color: lightgray;
     
         color: black;
     
-        font-family: 'Courier New', Courier, monospace;
-    
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
     
     .gallery-hero{
+
+        width: 80%;
         display: flex;
-        margin-bottom: 40px;
-        
+        flex-direction: column;
+        margin-bottom: 10px;
     }
     
     .gallery-hero-cntr{
@@ -199,34 +196,36 @@
         }
         
     .gallery-hero-header{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-style: italic;
         font-family: HackBold;
     }
         
     .gallery-hero-p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-family: TTLight;
     }
     
     .cards{
+        width: 100%;
+
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
     }
     
     .card{
-        width: 350px;
-        height: 650px;
+        width: 100%;
+        height: fit-content;
     
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
     
-        margin: 20px 40px 0px 0px ;
-        padding: 20px;
+        margin: 0px 0px 40px 0px ;
+        padding: 10px;
     
         border: solid 1px black;
         
@@ -234,17 +233,26 @@
         left:0px;
         transition: left ease-in-out 0.2s;
     }
-    
-    .card:hover{
-        left:10px;
-    
+
+    .gallery-img-cntr{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 10px;
     }
-    
-    .card-img{
-        margin: 0px 0px 20px 0px ;
-    
+
+    .card-img{    
         width: 300px;
         height: auto;
+    }
+
+    .gallery-card-info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .card-title{
@@ -272,29 +280,20 @@
         transition: font-family ease-in-out 0.2s;
     }
     
-    .card-ref:hover{
-        font-family: TTRegular;
-        cursor:default;
-    }
-    
+  
     .card-link-cntr{
         font-family: TTBold;
+        font-size: 1.2rem;
     }
     
     .card-link-a{
         position :relative;
         text-decoration: none;
         margin: 20px 0px 0px 0px ;
-        font-size: 1rem;
         left:0;
         transition: font-family ease-in-out 0.2s;
     }
-    
-    .card-link-a:hover{
-        font-family: TTBold;
-        color: red;
-    }
-    
+        
     .card-link-i{
         position: relative;
         top:1px;

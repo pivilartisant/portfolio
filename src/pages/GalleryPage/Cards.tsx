@@ -53,18 +53,22 @@ export function Cards(){
         <>
         {newData.map((project: Projects) => (
             <div className="card" key={project.id}>
-                <img className="card-img" src={img[project.id-1].src} ></img>
-                <h3 className="card-title">{project.title}</h3>
-                <p className="card-desc">{project.desc}</p>
-                <div className="card-refs">
-                    {project.refs.map((ref)=>
-                        <p className="card-ref">
-                            {ref}
-                        </p>
-                    )}
+                <div className="gallery-img-cntr">
+                    <img className="card-img" src={img[project.id-1].src} ></img>
                 </div>
-                <div className="card-link-cntr">
-                    <p className="card-link-p">Visit   <a className="card-link-a" target={"_blank"} href={project.link as string}>{project.title}</a> <img className="card-link-i" src={arrow} alt="right arrow"/> </p>
+                <div className="gallery-card-info">
+                    <h3 className="card-title">{project.title}</h3>
+                    <p className="card-desc">{project.desc}</p>
+                    <div className="card-refs">
+                        {project.refs.map((ref)=>
+                            <p className="card-ref">
+                                {ref}
+                            </p>
+                        )}
+                    </div>
+                    <div className="card-link-cntr">
+                        <p className="card-link-p">Visit   <a className="card-link-a" target={"_blank"} href={project.link as string}>{project.title}</a> <img className="card-link-i" src={arrow} alt="right arrow"/> </p>
+                    </div>
                 </div>
             </div>
         ))}

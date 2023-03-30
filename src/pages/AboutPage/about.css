@@ -159,60 +159,53 @@
 
 
 
+
+
 /*MOBILE*/
 @media screen and (max-width:1000px) {
     .about{
 
-        margin: 0px;
-        padding: 20px;
+        margin-top: 20px;
+        padding: 10px;
         min-width: 100vw;
-        min-height: 100vh;
+        height: 100vh;
     
         background-color: lightgray;
     
         color: black;
     
-        font-family: 'Courier New', Courier, monospace;
-    
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
     
     .text-about{
         height: fit-content;
-        width: 500px;
+        width: 100%;
     }
     
     .text-about-title{
         width: fit-content;
-    
-        padding-top:20px;
-        padding-bottom:20px;
+        font-size: 1.3rem;
     }
     
     .text-about-header{
         font-family: HackRegular;
-        font-size: 1.6rem;
     }
     
     .text-about-header em{
         font-family: HackBold;
-        font-size: 1.6rem;
     }
     
     .text-about-content{
-        padding-top:20px;
-        padding-bottom:20px;
+       display: initial;
+       font-size: 1.2rem;
     }
     
     .text-about-p{
         font-family: TTRegular;
         margin-top:40px;
         margin-bottom:40px;
-    
-        font-size: 1.3rem;
     }
     
     .text-about-p em{
@@ -223,7 +216,8 @@
         height: fit-content;
     
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         
         font-family: TTMedium;
         color: black;
@@ -265,16 +259,6 @@
         margin-left: 10px;
     }
     .about-logos-cntr{
-        width: 400px;
-        height: 400px;
-    
-        margin-left:240px ;
-    }
-    .about-logos{
-        width: 100px;
-        height: auto;
-    
-        margin-right: 80px;
-        margin-bottom: 40px;
+        display: none;
     }
 }
